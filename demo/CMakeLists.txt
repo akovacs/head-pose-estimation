@@ -26,17 +26,17 @@ IF(WIN32)
 
 ELSE(WIN32)
 
-	SET( OPENCV_INCLUDES /usr/local/include ) 
-	SET( OPENCV_LIB /usr/local/lib )
+	SET( OPENCV_INCLUDES /usr/include/opencv4 ) 
+	SET( OPENCV_LIB /usr/lib )
 	
-	SET( FREENECT_INCLUDES /home/matthias/libfreenect/include ) 
-	SET( FREENECT_LIB /home/matthias/libfreenect/build/lib )
+	SET( FREENECT_INCLUDES /usr/include/libfreenect ) 
+	SET( FREENECT_LIB /usr/lib/ )
 	
-	SET( OPENNI_INCLUDES /home/matthias/OpenNI/Include ) 
-	SET( OPENNI_LIB /home/matthias/OpenNi_bin/Lib ) 
+	SET( OPENNI_INCLUDES /usr/include/ni ) 
+	SET( OPENNI_LIB /usr/lib ) 
 	
-	SET( LIBLO_INCLUDES /home/matthias/liblo-0.26 ) 
-	SET( LIBLO_LIB /usr/local/lib ) 
+	SET( LIBLO_INCLUDES /usr/include/lo ) 
+	SET( LIBLO_LIB /usr/lib ) 
 
 	#assuming freeglut installed on linux
 	LINK_DIRECTORIES( ${OPENNI_LIB} ${OPENCV_LIB} ${LIBLO_LIB} ${FREENECT_LIB} )
