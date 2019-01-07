@@ -38,6 +38,8 @@ ELSE(WIN32)
 	SET( LIBLO_INCLUDES /usr/include/lo ) 
 	SET( LIBLO_LIB /usr/lib ) 
 
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread -lGL")
+
 	#assuming freeglut installed on linux
 	LINK_DIRECTORIES( ${OPENNI_LIB} ${OPENCV_LIB} ${LIBLO_LIB} ${FREENECT_LIB} )
 

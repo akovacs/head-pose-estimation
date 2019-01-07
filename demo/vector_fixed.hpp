@@ -3,6 +3,7 @@
 
 #include "common.hpp"
 
+#include <cmath>
 #include <iostream>
 
 namespace math {
