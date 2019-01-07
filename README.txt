@@ -38,62 +38,19 @@ to visualize the headtracking.
 (C) 2011/2012 by Matthias Kronlachner
 __________________________________________________________
 
-::INSTALL STANDALONE PROGRAM::
-Ready to use Binaries for OSX (64 bit) and Windows (32 bit) are included.
-
-
-Windows
------------------
-Binary is included
-Windows version is compiled for Microsoft Kinect SDK!!
-
-* get and install OpenCV from http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.0/
-* get and install Microsoft Kinect SDK for Windows http://www.microsoft.com/en-us/kinectforwindows/develop/developer-downloads.aspx
-
-
-Linux
+Arch Linux
 -----------------
 
-*	you need cmake, OpenCV, OpenNI, freeglut, and OpenGL libraries
-	for installing OpenNI follow this instructions: https://github.com/avin2/SensorKinect
+* sudo pacman -S cmake opencv freeglut
 
-*	get liblo
-	http://liblo.sourceforge.net/
+* pacaur -S libfreenect openni liblo
 
-*	edit demo/CMakeLists.txt and adjust paths
-
+* cd demo/
 *	#.../head_pose_estimation/demo> cmake CMakeLists.txt
 *	#.../head_pose_estimation/demo> make
 
 
 *	#.../head_pose_estimation> ./head_pose_estimation_demo config.txt
-
-OSX
------------------
-
--> use precompiled BINARIES! 
-	./head_pose_estimation_demo_freenect
-or	./head_pose_estimation_demo_openni
-
-for compilation:
-
-* you will need XCode to compile the demo application for OSX 
-
-* follow instructions on https://github.com/avin2/SensorKinect 
-	to install OpenNI
-	 
-* get liblo
-	http://liblo.sourceforge.net/
-
-* get OpenCV, OpenGL, Glut through macports
-
-* open the XCode Project in demo folder, 
-  adjust path settings for Frameworks and build it.
-
-__________________
-:::THINGS TO DO:::
-
-
 
 
 questions: m.kronlachner@gmail.com
